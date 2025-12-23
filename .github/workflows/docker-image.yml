@@ -3,6 +3,10 @@ name: Docker Multi-Arch Build
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - 'Dockerfile'
+      - 'entrypoint.sh'
+      #- '.github/workflows/**'
   workflow_dispatch:
     inputs:
       reason:
